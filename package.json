@@ -1,8 +1,8 @@
 {
   "name": "webpack4-base",
   "version": "1.0.0",
-  "description": "a webpack 4 boilerplate with babel [ES6+], eslint, postcss, stylelint, gulp & more. Utilizing modular webpack multi-mode config with ES6 modules.",
-  "repository": "Xxx",
+  "description": "Webpack 4 boilerplate with Babel [ES6+], Eslint, Postcss, Stylelint, Gulp & more. Utilizing modular webpack multi-mode config with ES6 modules.",
+  "repository": "https://github.com/wwwsolutions/solutions-mvu-starter",
   "main": "app.js",
   "scripts": {
     "webpack": "webpack",

@@ -1,0 +1,83 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+@component button {
+  box-sizing: border-box;
+  @map font secondary;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+
+  /* STATE MODIFIERS */
+  @modifier state {
+    background: linear-gradient(180deg, rgba(253, 253, 253, 0.2) 8.9283%, rgba(0, 0, 0, 0.2) 86.88406%);
+  }
+  @modifier state:link {
+    color: var(--color-moon-gray);
+  }
+  @modifier state:visited {
+    color: var(--color-moon-gray);
+  }
+  @modifier state:hover {
+    background: linear-gradient(180deg, rgba(225, 225, 225, 0.5) 8.9283%, rgba(0, 0, 0, 0.3) 86.88406%);
+    background-color: var(--color-black);
+    color: var(--color-silver);
+  }
+  @modifier state:active {
+    background: linear-gradient(180deg, rgba(225, 225, 225, 0.5) 8.9283%, rgba(0, 0, 0, 0.3) 86.88406%);
+    background-color: var(--color-black);
+    color: var(--color-silver);
+  }
+
+  /* FONT SIZE MODIFIERS */
+  @modifier fs-large {
+    font-size: 1.3em;
+    padding: 0.5em 1em 0.5em 1em;
+  }
+
+  /* BACKGROUND COLOR MODIFIERS */
+  @modifier bg-green {
+    background-color: var(--color-green);
+  }
+  @modifier bg-transparent {
+    background-color: var(--color-transparent);
+  }
+
+  /* BORDER MODIFIERS */
+  @modifier b-dark {
+    border: 0.75px solid rgba(0, 0, 0, 0.4);
+  }
+
+  /* BORDER RADIUS MODIFIERS */
+  @modifier br-small {
+    border-radius: 7px;
+  }
+
+
+  /* MARGIN MODIFIERS */
+  @modifier mb-until-small {
+    margin-bottom: 1em;
+    @mixin atSmall {
+      margin-bottom: 0;
+    }
+  }
+
+  @modifier mr-after-small {
+    margin-right: 0;
+    @mixin atSmall {
+      margin-right: 1em;
+    }
+  }
+}

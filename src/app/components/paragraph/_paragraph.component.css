@@ -1,0 +1,37 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+@component paragraph {
+  box-sizing: border-box;
+
+  /* COLOR MODIFIERS */
+  @modifier color-gold {
+    color: var(--color-yellow);
+  }
+  @modifier color-light {
+    color: var(--color-moon-gray)
+  }
+
+  /* FONT SIZE MODIFIERS */
+  &--fs-larger {
+    font-size: calc(var(--baseline) * 1.075);
+    @mixin atSmall {
+      font-size: calc(1.2705 * 1.025)em;
+    }
+    @mixin atMedium {
+      font-size: calc(1.2705 * 1.025)em;
+    }
+    @mixin atLarge {
+      font-size: calc(1.2705 * 1.025)em;
+    }
+    @mixin atXLarge {
+      font-size: calc(1.2705 * 1.025)em;
+    }
+  }
+
+}

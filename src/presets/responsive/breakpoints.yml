@@ -1,0 +1,6 @@
+# breakpoints.yml
+# UTILIZED IN _variables.css
+atSmall: "(min-width: 569px)"
+atMedium: "(min-width: 824px)"
+atLarge: "(min-width: 1010px)"
+atXLarge: "(min-width: 1400px)"

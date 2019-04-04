@@ -1,0 +1,182 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+/* DOCUMENT INFORMATION
+
+  > MAP GLOBAL/DEFAULT RESPONSIVE TYPOGRAPHY
+  > FROM CONFIG .YML FILES
+
+  > TARGET TAGS:
+    <body>,  <h>, <paragraph>, <small>, <blockquote>
+
+  > SET VALUES:
+   font-family, font-size, line-height, color
+
+  > SOURCE:
+  https://stevenloria.com/responsive-typography/
+
+*/
+
+html {
+  @map font primary;
+  @map font baseline normal-text;
+  @map line-height atDefault body;
+  @map font color text;
+}
+
+h1 {
+  @map font secondary;
+  @map step 5;
+  @map font color headline;
+
+
+  @map line-height atDefault h1;
+  @mixin atSmall {
+    @map line-height atSmall h1;
+  }
+  @mixin atMedium {
+    @map line-height atMedium h1;
+  }
+  @mixin atLarge {
+    @map line-height atLarge h1;
+  }
+  @mixin atXLarge {
+    @map line-height atXLarge h1;
+  }
+}
+
+h2 {
+  display: block;
+  @map font secondary;
+  @map step 4;
+  @map font color headline;
+
+  @map line-height atDefault h2;
+  @mixin atSmall {
+    @map line-height atSmall h2;
+  }
+  @mixin atMedium {
+    @map line-height atMedium h2;
+  }
+  @mixin atLarge {
+    @map line-height atLarge h2;
+  }
+  @mixin atXLarge {
+    @map line-height atXLarge h2;
+  }
+}
+
+h3 {
+  @map font secondary;
+  @map font color headline;
+  @map step 3;
+
+  @map line-height atDefault h3;
+  @mixin atSmall {
+    @map line-height atSmall h3;
+  }
+  @mixin atMedium {
+    @map line-height atMedium h3;
+  }
+  @mixin atLarge {
+    @map line-height atLarge h3;
+  }
+  @mixin atXLarge {
+    @map line-height atXLarge h3;
+  }
+}
+
+h4 {
+  @map font secondary;
+  @map font color headline;
+  @map step 2;
+
+  @map line-height atDefault h4;
+  @mixin atSmall {
+    @map line-height atSmall h4;
+  }
+  @mixin atMedium {
+    @map line-height atMedium h4;
+  }
+  @mixin atLarge {
+    @map line-height atLarge h4;
+  }
+  @mixin atXLarge {
+    @map line-height atXLarge h4;
+  }
+}
+
+h5 {
+  @map font secondary;
+  @map font color headline;
+  @map step 1;
+
+  @map line-height atDefault h5;
+  @mixin atSmall {
+    @map line-height atSmall h5;
+  }
+  @mixin atMedium {
+    @map line-height atMedium h5;
+  }
+  @mixin atLarge {
+    @map line-height atLarge h5;
+  }
+  @mixin atXLarge {
+    @map line-height atXLarge h5;
+  }
+}
+
+h6 {
+  @map font secondary;
+  @map font color headline;
+  @map step 0;
+
+  @map line-height atDefault h6;
+  @mixin atSmall {
+    @map line-height atSmall h6;
+  }
+  @mixin atMedium {
+    @map line-height atMedium h6;
+  }
+  @mixin atLarge {
+    @map line-height atLarge h6;
+  }
+  @mixin atXLarge {
+    @map line-height atXLarge h6;
+  }
+}
+
+p {
+  @map font primary;
+  @map font color text;
+  @map step 0;
+  @map line-height atXLarge p;
+}
+
+small {
+  @map font primary;
+  @map step -1;
+  @map line-height atXLarge small;
+}
+
+blockquote {
+  @map font primary;
+  @map step 0;
+  @map line-height atXLarge blockquote;
+  font-weight: 100;
+  font-style: italic;
+}
+
+a {
+  @map font color link;
+  text-decoration: none;
+}
+
+li {
+  @map font color list;
+}

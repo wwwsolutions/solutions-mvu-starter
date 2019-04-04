@@ -1,0 +1,141 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+@component toggler {
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--color-transparent);
+  z-index: 15;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  width: var(--navbar-height);
+  height: var(--navbar-height);
+
+  /* ONSCROLL
+    ADD THIS STYLES AT ONSCROLL EVENT
+  */
+  background-color: var(--color-transparent);
+  /* box-shadow: -2px 0px 11px 1px rgba(0,0,0,0.75); */
+  border-radius: 0 0 0 5px;
+
+  @mixin atMedium {
+    display: none;
+    z-index: 20;
+  }
+
+  /* ICON BARS */
+  @descendent icon-bars {
+    background-color: var(--color-light-gray);
+    position: absolute;
+    /* left: 1px; */
+    left: 30%;
+    top: 45%;
+    height: 2px;
+    width: 20px;
+    transition: 0.4s;
+  }
+
+  @descendent icon-bars::before {
+    background-color: var(--color-light-gray);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -8px;
+    height: 2px;
+    width: 20px;
+    transition: 0.3s width 0.4s;
+  }
+
+  @descendent icon-bars::after {
+    margin-top: 0;
+    background-color: var(--color-light-gray);
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 2px;
+    width: 20px;
+    transition: 0.3s width 0.4s;
+  }
+
+  /* Bars Shadows */
+  @descendent icon-bars.overlay {
+    background: rgb(97, 114, 129);
+    background: rgb(183, 199, 211);
+    width: 20px;
+    animation: middleBar 3s infinite 0.5s;
+  }
+
+  @keyframes middleBar {
+    0% { width: 0px; }
+    50% { width: 20px; }
+    100% { width: 0px; }
+  }
+
+  @descendent icon-bars.overlay::before {
+    background: rgb(97, 114, 129);
+    background: rgb(183, 199, 211);
+    width: 10px;
+    animation: topBar 3s infinite 0.2s;
+  }
+
+  @keyframes topBar {
+    0% { width: 0px; }
+    50% { width: 10px; }
+    100% { width: 0px; }
+  }
+
+  @descendent icon-bars.overlay::after {
+    background: rgb(97, 114, 129);
+    background: rgb(183, 199, 211);
+    width: 15px;
+    animation: bottomBar 3s infinite 1s;
+  }
+
+  @keyframes bottomBar {
+    0% { width: 0px; }
+    50% { width: 15px; }
+    100% { width: 0px; }
+  }
+
+  /* ************************ */
+  /* Toggle navbar-toggler Icon */
+  &.toggle .toggler__icon-bars {
+    background-color: var(--color-black);
+    /* top: 5px; */
+    /* left: 30%; */
+    top: 35%;
+
+    transform: translate3d(0, 5px, 0) rotate(135deg);
+    /* transition-delay: 0.1s; */
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &.toggle .toggler__icon-bars::before {
+    background-color: var(--color-black);
+    top: 0;
+    transition-delay: 0.1s;
+    opacity: 0;
+  }
+
+  &.toggle .toggler__icon-bars::after {
+    background-color: var(--color-black);
+    top: 10px;
+    transform: translate3d(0, -10px, 0) rotate(-270deg);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &.toggle .toggler__icon-bars.menu__overlay {
+    width: 20px;
+    opacity: 0;
+    transition: all 0s ease 0s;
+  }
+}

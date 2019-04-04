@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Poppins-BoldItalic';
+    src: url('Poppins-BoldItalic.eot');
+    src: local('Poppins Bold Italic'), local('Poppins-BoldItalic'),
+        url('Poppins-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-BoldItalic.woff2') format('woff2'),
+        url('Poppins-BoldItalic.woff') format('woff'),
+        url('Poppins-BoldItalic.ttf') format('truetype'),
+        url('Poppins-BoldItalic.svg#Poppins-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}

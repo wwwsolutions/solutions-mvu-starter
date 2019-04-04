@@ -1,0 +1,194 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+/* DOCUMENT INFORMATION
+
+  > VARIABLES / CUSTOM MEDIA DEFINITIONS
+
+  > SITE COLORS / PALLETES
+  > SITE TYPOGRAPHY SCALE / STEPS
+
+ ----------------------------- */
+:root {
+
+  /* GLOBAL SETTINGS
+
+    >
+    >
+
+  ----------------------------- */
+  --navbar-height: 60px;
+
+
+  /* COLOR PALETTES
+
+    > DEFINE CUSTOM COLORS FOR USE IN APPLICATION
+    > FROM IMPORTED PALETTES
+
+  ----------------------------- */
+
+  /* ACROMATIC
+  ----------------------------- */
+  --color-black: #000;
+  --color-near-black: #111;
+  --color-dark-gray: #333;
+  --color-mid-gray: #555;
+  --color-gray: #777;
+  --color-silver: #999;
+  --color-light-silver: #aaa;
+  --color-moon-gray: #ccc;
+  --color-light-gray: #eee;
+  --color-near-white: #f4f4f4;
+  --color-white: #fff;
+  --color-transparent: transparent;
+
+  /* REDS
+  ----------------------------- */
+  --color-red: #ea2027;
+  --color-dark-red: var(--color-custom-darkRed); /* #d70000 */
+  --color-light-red: rgba(243, 72, 104, 1);
+
+  /* GREENS
+  ----------------------------- */
+  --color-green: #009432;
+  --color-dark-green: #006412;
+  --color-light-green: #c4e538;
+
+  /* BLUES
+  ----------------------------- */
+  --color-blue: #0652dd;
+  --color-dark-blue: #1b1464;
+  --color-light-blue: #5758bb;
+
+  /* AQUAS
+  ----------------------------- */
+  --color-dark-aqua: #006266;
+  --color-light-aqua: #12cbc4;
+  --color-aqua: #1289a7;
+
+  /* YELLOWS
+  ----------------------------- */
+  --color-yellow: #f79f1f;
+  --color-dark-yellow: #ee5a24;
+  --color-light-yellow: #ffc312;
+
+  /* PURPLES
+  ----------------------------- */
+  --color-purple: #d980fa;
+  --color-dark-purple: rgba(158, 0, 236, 1);
+  --color-light-purple: #fda7df;
+
+  /* MAGENTAS
+  ----------------------------- */
+  --color-magenta: #833471;
+  --color-dark-magenta: #6f1e51;
+  --color-light-magenta: #b53471;
+
+  /* BRAND COLORS
+  ----------------------------- */
+  --color-brand-facebook: #3b5998;
+  --color-brand-twitter: #55acee;
+  --color-brand-instagram: #cd486b;
+
+  /* CUSTOM
+  ----------------------------- */
+  --color-custom-myCustomColor: #1efcba;
+  --color-custom-darkRed: #d70000;
+  --color-codepen-dark: #1d1e22;
+
+
+  /* TYPOGRAPHY <> SETTINGS
+
+   > RESPONSIVE SCALE DEFINITIONS
+
+   > SCALE CREATION WORKFLOW:
+   1) TO GENERATE A CUSTOM SCALE, WISELY CHOOSE 3 BASELINE RATIOS IN [TYPOGRAPHY <> RATIOS] SECTION TO BE USED IN STEPS GENERATION FORMULAS.
+      RATIOS ARE STORED IN EXTERNAL FILE [src/settings/typography/ratio.jml].
+   2) ADD/REMOVE/CONFIGURE STEPS IN [TYPOGRAPHY <> STEPS] SECTION IF REQUIRED.
+
+   * IMPORTANT>
+    USE ALL BREAKPOINS IN "TYPOGRAPHY <> STEPS"!
+    DONT REMOVE/DELETE ANY LINE IN media().
+    DONT OMMIT ANY ON ANY STTEP DEFINITION, IT COULD LEAD TO STRANGE BUG ON GLOBAL MEDIA QUERIES!!!
+
+  ----------------------------- */
+
+
+  /* TYPOGRAPHY <> RATIOS
+  ----------------------------- */
+  $ratio-base: map(ratio, minorSecond);
+  $ratio-small: map(ratio, minorThird);
+  $ratio-large: map(ratio, perfectFourth);
+
+  /* TYPOGRAPHY <> STEPS
+  ----------------------------- */
+  --stepUp5: media(
+    math(pow($ratio-small, 5))em,
+    map(breakpoints, atSmall) math(pow($ratio-large, 5))em,
+    map(breakpoints, atMedium) math(pow($ratio-large, 5))em,
+    map(breakpoints, atLarge) math(pow($ratio-large, 5))em,
+    map(breakpoints, atXLarge) math(pow($ratio-large, 5))em,
+  );
+  --stepUp4: media(
+    math(pow($ratio-small, 4))em,
+    map(breakpoints, atSmall) math(pow($ratio-large, 4))em,
+    map(breakpoints, atMedium) math(pow($ratio-large, 4))em,
+    map(breakpoints, atLarge) math(pow($ratio-large, 4))em,
+    map(breakpoints, atXLarge) math(pow($ratio-large, 4))em,
+  );
+  --stepUp3: media(
+    math(pow($ratio-small, 3))em,
+    map(breakpoints, atSmall) math(pow($ratio-large, 3))em,
+    map(breakpoints, atMedium) math(pow($ratio-large, 3))em,
+    map(breakpoints, atLarge) math(pow($ratio-large, 3))em,
+    map(breakpoints, atXLarge) math(pow($ratio-large, 3))em,
+  );
+  --stepUp2: media(
+    math(pow($ratio-small, 2))em,
+    map(breakpoints, atSmall) math(pow($ratio-large, 2))em,
+    map(breakpoints, atMedium) math(pow($ratio-large, 2))em,
+    map(breakpoints, atLarge) math(pow($ratio-large, 2))em,
+    map(breakpoints, atXLarge) math(pow($ratio-large, 2))em,
+  );
+  --stepUp1: media(
+    math(pow($ratio-small, 1))em,
+    map(breakpoints, atSmall) math(pow($ratio-large, 1))em,
+    map(breakpoints, atMedium) math(pow($ratio-large, 1))em,
+    map(breakpoints, atLarge) math(pow($ratio-large, 1))em,
+    map(breakpoints, atXLarge) math(pow($ratio-large, 1))em,
+  );
+  --baseline: media(
+    math(pow($ratio-base, 1))em,
+    map(breakpoints, atSmall) math(pow($ratio-small, 1))em,
+    map(breakpoints, atMedium) math(pow($ratio-small, 1))em,
+    map(breakpoints, atLarge) math(pow($ratio-small, 1))em,
+    map(breakpoints, atXLarge) math(pow($ratio-small, 1))em,
+  );
+  --stepDown1: media(
+    calc(1em / math(pow($ratio-small, 1))),
+    map(breakpoints, atSmall) calc(1em / math(pow($ratio-base, 1))),
+    map(breakpoints, atMedium) calc(1em / math(pow($ratio-base, 1))),
+    map(breakpoints, atLarge) calc(1em / math(pow($ratio-base, 1))),
+    map(breakpoints, atXLarge) calc(1em / math(pow($ratio-base, 1))),
+  );
+  --stepDown2: media(
+    calc(1em / math(pow($ratio-small, 2))),
+    map(breakpoints, atSmall) calc(1em / math(pow($ratio-base, 2))),
+    map(breakpoints, atMedium) calc(1em / math(pow($ratio-base, 2))),
+    map(breakpoints, atLarge) calc(1em / math(pow($ratio-base, 2))),
+    map(breakpoints, atXLarge) calc(1em / math(pow($ratio-base, 2))),
+  );
+  --stepDown3: media(
+    calc(1em / math(pow($ratio-small, 3))),
+    map(breakpoints, atSmall) calc(1em / math(pow($ratio-base, 3))),
+    map(breakpoints, atMedium) calc(1em / math(pow($ratio-base, 3))),
+    map(breakpoints, atLarge) calc(1em / math(pow($ratio-base, 3))),
+    map(breakpoints, atXLarge) calc(1em / math(pow($ratio-base, 3))),
+  );
+
+}

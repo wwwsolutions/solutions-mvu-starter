@@ -1,0 +1,53 @@
+# SET BASE TEXT SIZES
+baseline:
+  small-text:
+    font-size: 90%
+  normal-text:
+    font-size: 100%
+  large-text:
+    font-size: 105%
+  extra-large-text:
+    font-size: 112.5%
+
+c:
+  h:
+    color: "var(--color-green)"
+
+# SET TEXT COLORS
+color:
+  text:
+    color: "var(--color-near-black)"
+  subtext:
+    color: "var(--color-near-black)"
+  link:
+    color: "var(--color-near-black)"
+  headline:
+    color: "var(--color-black)"
+  subheadline:
+    color: "var(--color-near-black)"
+  quote:
+    color: "var(--color-near-black)"
+  list:
+    color: "var(--color-near-black)"
+
+# SET FONTS
+primary:
+  font-family: "'Poppins-Light', serif"
+  font-weight: 300;
+  font-style: normal;
+  font-feature-settings: "'onum', 'kern', 'liga', 'dlig', 'clig'"
+  font-kerning: 'normal'
+
+secondary:
+  font-family: "'Poppins-Regular', sans-serif"
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: "'onum', 'kern', 'liga', 'dlig', 'clig'"
+  font-kerning: 'normal'
+
+tertiary:
+  font-family: Monaco, Menlo, Consolas, "'Courier New', monospace"
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: "'onum', 'kern', 'liga', 'dlig', 'clig'"
+  font-kerning: 'normal'

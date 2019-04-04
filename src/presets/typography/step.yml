@@ -1,0 +1,26 @@
+5:
+  font-size: "var(--stepUp5)"
+
+4:
+  font-size: "var(--stepUp4)"
+
+3:
+  font-size: "var(--stepUp3)"
+
+2:
+  font-size: "var(--stepUp2)"
+
+1:
+  font-size: "var(--stepUp1)"
+
+0:
+  font-size: "var(--baseline)"
+
+-1:
+  font-size: "var(--stepDown1)"
+
+-2:
+  font-size: "var(--stepDown2)"
+
+-3:
+  font-size: "var(--stepDown3)"

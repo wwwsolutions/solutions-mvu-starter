@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url('Poppins-ExtraBoldItalic.eot');
+    src: local('Poppins ExtraBold Italic'), local('Poppins-ExtraBoldItalic'),
+        url('Poppins-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-ExtraBoldItalic.woff2') format('woff2'),
+        url('Poppins-ExtraBoldItalic.woff') format('woff'),
+        url('Poppins-ExtraBoldItalic.ttf') format('truetype'),
+        url('Poppins-ExtraBoldItalic.svg#Poppins-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}

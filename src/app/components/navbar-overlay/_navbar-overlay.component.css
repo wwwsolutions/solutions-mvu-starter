@@ -1,0 +1,35 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+@component navbar-overlay {
+  background-color: var(--color-dark-purple);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  z-index: 2;
+  transition: transform 0.2s ease-out;
+  transform: translateX(-100%);
+
+  /* TRANSFORM MODIFIERS */
+  @modifier is-visible {
+    transform: translateX(0%);
+    @mixin atMedium {
+      transform: translateX(-100%);
+    }
+  }
+
+  @mixin atMedium {
+    z-index: -1;
+  }
+}

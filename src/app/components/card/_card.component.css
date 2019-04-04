@@ -1,0 +1,56 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+/*
+@mixin atSmall {
+}
+@mixin atMedium {
+}
+@mixin atLarge {
+}
+@mixin atXLarge {
+}
+*/
+
+@component card {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-near-white);
+  background: linear-gradient(0deg, #eaeaea  0%, #fafafa 100%);
+
+  @descendent header {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    padding: 0 2em;
+  }
+
+  @descendent header .icon {
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #CCC;
+  }
+
+  @descendent header .headline {
+    text-align: center;
+  }
+
+  @descendent body {
+    margin: 0;
+    text-align: left;
+    padding: 2em;
+  }
+
+  @descendent footer {
+    display: none;
+  }
+}

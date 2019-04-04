@@ -1,0 +1,59 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+@import "normalize.css";
+
+/* GENERATED
+  > GULP:SPRITES
+    AUTOMATICALLY GENERATED STYLESHEETS FOR ICONS SPRITE VIA GULP TASK.
+  ----------------------------- */
+@import "generated/_sprite";
+
+/* BASE STYLES
+  > COLORS, MIXINS, TYPOGRAPHY
+  ----------------------------- */
+@import "base/_variables";
+@import "base/_mixins.css";
+@import "base/_typography.css";
+
+/* LAYOUT
+    > SET UP CUSTOM GRID STYLES. DEFAULT IS LOST GRID.
+    > SET UP SECTION STYLES. SHARED BY ALL SECTIONS.
+  ----------------------------- */
+@import "layout/_grid";
+@import "layout/_section";
+
+/* COMMON
+  > SET UP GLOBAL/SHARED/COMMON STYLES.
+  > SET UP OUT-OF-COMPONENT STYLES.
+  ----------------------------- */
+@import "base/_common.css";
+
+/* COMPONENTS
+  > UNIQUE REUSABLE/PLUGABLE BLOCKS.
+  ----------------------------- */
+@import "../../app/components/logo/_logo.component.css";
+@import "../../app/components/navbar/_navbar.component.css";
+@import "../../app/components/navbar-overlay/_navbar-overlay.component.css";
+@import "../../app/components/nav/_nav.component.css";
+@import "../../app/components/toggler/_toggler.component.css";
+@import "../../app/components/title-multiline/_title-multiline.component.css";
+@import "../../app/components/button/_button.component.css";
+@import "../../app/components/paragraph/_paragraph.component.css";
+@import "../../app/components/headline/_headline.component.css";
+@import "../../app/components/typography-element/_typography-element.component.css";
+@import "../../app/components/card/_card.component.css";
+@import "../../app/components/list/_list.component.css";
+@import "../../app/components/code-snippet/_code-snippet.component.css";
+@import "../../app/components/copyright/_copyright.component.css";
+
+/* EFFECTS
+  > COMPONENTS USED IN VENDOR LOGIC [src/app/libs]
+  ----------------------------- */
+
+@import "./effects/_reveal-item.css";

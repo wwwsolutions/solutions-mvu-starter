@@ -1,0 +1,27 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+@component typography-element {
+  box-sizing: border-box;
+  width: 100%;
+  color: var(--color-yellow);
+
+  @descendent tag {
+    @map font tertiary;
+    display: block;
+    font-weight: 700;
+    color: var(--color-silver);
+    font-size: 18px;
+    position: relative;
+    left: 0px;
+    top: -10px;
+  }
+
+}
+
+

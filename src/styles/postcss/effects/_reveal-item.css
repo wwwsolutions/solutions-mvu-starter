@@ -1,0 +1,31 @@
+@component reveal-item {
+  /* OPACITY MODIFIERS */
+  @modifier opacity-visible {
+    opacity: 1;
+  }
+  @modifier opacity-hidden {
+    opacity: 0;
+  }
+
+  /* TRANSITION MODIFIERS */
+  @modifier transition-slow {
+    transition: all 1s ease-out;
+  }
+  @modifier transition-fast {
+    transition: all 0.5s ease-out;
+  }
+
+  /* SCALE MODIFIERS */
+  @modifier scale-default {
+    transform: scale(1);
+  }
+  @modifier scale-up {
+    transform: scale(1);
+    @mixin atSmall {
+      transform: scale(1.025);
+    }
+    @mixin atMedium {
+      transform: scale(1.05);
+    }
+  }
+}

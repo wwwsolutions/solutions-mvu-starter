@@ -1,0 +1,11 @@
+node_modules/**
+build-utils/**
+dist/**
+src/app/**
+src/assets/**
+src/presets/**
+src/templates/**
+src/vendors/**
+src/styles/postcss/base/**
+src/styles/postcss/generated/**
+src/styles/postcss/layout/**

@@ -1,0 +1,120 @@
+/* DOCUMENT INFORMATION
+
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+  > XXXXXXXXXXXXXXXXXXXX
+
+/////////////////////////////////////////////////*/
+
+/* DOCUMENT INFORMATION
+
+  > POSTCSS MEDIA MIXINS DEFINITIONS
+    IN ACCORDANCE TO MOBILE FIRST CSS PATTERN
+
+  > MAP VIEWPORT BREAKPOINTS
+  > FROM CONFIG .YML FILES
+
+  > MUST CORRESPODENT breakpoints.yml
+
+*************************************/
+
+@define-mixin atSmall {
+  @media map(breakpoints, atSmall) {
+    @mixin-content;
+  }
+}
+@define-mixin atMedium {
+  @media map(breakpoints, atMedium) {
+    @mixin-content;
+  }
+}
+@define-mixin atLarge {
+  @media map(breakpoints, atLarge) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atXLarge {
+  @media map(breakpoints, atXLarge) {
+    @mixin-content;
+  }
+}
+
+
+/*
+@define-mixin atSmall {
+  @media (min-width: 569px) {
+    @mixin-content;
+  }
+}
+@define-mixin atMedium {
+  @media (min-width: 824px) {
+    @mixin-content;
+  }
+}
+@define-mixin atLarge {
+  @media (min-width: 1010px) {
+    @mixin-content;
+  }
+}
+@define-mixin atXLarge {
+  @media (min-width: 1400px) {
+    @mixin-content;
+  }
+}
+
+ *//* TODO DEBUG
+
+  map() inside @media
+  >>> DOES NOT WORK!
+  >>> IT GENERATES VALID MEDIAQUERY BUT WITH SOME STRANGE BEHAVIOUR:
+  >>> SOME QUERY ARE NOT APPLIED IN BROWSER
+
+ */
+
+/*
+@define-mixin atSmall {
+  @media map(breakpoints, atSmall) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media map(breakpoints, atMedium) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  @media map(breakpoints, atLarge) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atXLarge {
+  @media map(breakpoints, atXLarge) {
+    @mixin-content;
+  }
+}
+*/
+
+/* $atSmall: map(breakpoints, atSmall); */
+
+
+/* @define-mixin atMedium {
+  @media map(breakpoints, atMedium) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  @media map(breakpoints, atLarge) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atXLarge {
+  @media map(breakpoints, atXLarge) {
+    @mixin-content;
+  }
+} */

@@ -1,0 +1,166 @@
+atDefault:
+
+  h6:
+    line-height: 1.11111111
+
+  h5:
+    line-height: 1.11111111
+
+  h4:
+    line-height: 1.11111111
+
+  h3:
+    line-height: 1.13636364
+
+  h2:
+    line-height: 1.15384615
+
+  h1:
+    line-height: 1.125
+
+  p:
+    line-height: 1.5
+
+  body:
+    line-height: 1.25
+
+  small:
+    line-height: 1
+
+  blockquote:
+    line-height: 1.25
+
+
+atSmall:
+
+  h6:
+    line-height: 1.11111111
+
+  h5:
+    line-height: 1.11111111
+
+  h4:
+    line-height: 1.11111111
+
+  h3:
+    line-height: 1.13636364
+
+  h2:
+    line-height: 1.15384615
+
+  h1:
+    line-height: 1.125
+
+  p:
+    line-height: 1.5
+
+  body:
+    line-height: 1.25
+
+  small:
+    line-height: 1
+
+  blockquote:
+    line-height: 1.25
+
+
+atMedium:
+
+  h6:
+    line-height: 1.22222222
+
+  h5:
+    line-height: 1.22222222
+
+  h4:
+    line-height: 1.22222222
+
+  h3:
+    line-height: 1.25
+
+  h2:
+    line-height: 1.25
+
+  h1:
+    line-height: 1.05
+
+  p:
+    line-height: 1.375
+
+  body:
+    line-height: 1.25
+
+  small:
+    line-height: 1
+
+  blockquote:
+    line-height: 1.45833333
+
+
+atLarge:
+
+  h6:
+    line-height: 1.22222222
+
+  h5:
+    line-height: 1.22222222
+
+  h4:
+    line-height: 1.22222222
+
+  h3:
+    line-height: 1.25
+
+  h2:
+    line-height: 1.25
+
+  h1:
+    line-height: 1.05
+
+  p:
+    line-height: 1.375
+
+  body:
+    line-height: 1.25
+
+  small:
+    line-height: 1
+
+  blockquote:
+    line-height: 1.45833333
+
+
+atXLarge:
+
+  h6:
+    line-height: 1.22222222
+
+  h5:
+    line-height: 1.22222222
+
+  h4:
+    line-height: 1.22222222
+
+  h3:
+    line-height: 1.25
+
+  h2:
+    line-height: 1.25
+
+  h1:
+    line-height: 1.05
+
+  p:
+    line-height: 1.375
+
+  body:
+    line-height: 1.25
+
+  small:
+    line-height: 1
+
+  blockquote:
+    line-height: 1.45833333
+
+
+

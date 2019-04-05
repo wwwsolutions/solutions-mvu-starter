@@ -23,7 +23,7 @@ const Model = {
     },
     multilineTitle: ['Webpack ES6 Starter.', 'MVU architecture.', 'Functional Paradigm.'],
     btnInstructions: { href: '#instructions', title: 'Quick start' },
-    btnGetBoilerplate: { href: 'https://github.com/wwwsolutions/webpack4-base', title: 'Get boilerplate' },
+    btnGetBoilerplate: { href: 'https://github.com/wwwsolutions/solutions-mvu-starter', title: 'Get boilerplate' },
 
   }
 };

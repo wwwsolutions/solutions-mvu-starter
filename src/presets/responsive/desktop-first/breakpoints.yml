@@ -1,0 +1,17 @@
+# breakpoints-desktop-first.yml
+# UTILIZED IN _variables.css
+
+# DESKTOP FIRST APPROACH
+# atSmall: "(max-width: 569px)"
+# atMedium: "(max-width: 824px)"
+# atLarge: "(max-width: 1010px)"
+# atXLarge: "(max-width: 1400px)"
+
+# CONVERTED TO EMS
+atSmall: "(max-width: 35.563em)"
+atMedium: "(max-width: 51.500em)"
+atLarge: "(max-width: 63.125em)"
+atXLarge: "(max-width: 87.500em)"
+
+# Using ems instead of pixels for MQs means we can keep the site proportional – a
+# change in the base font size means a change in the media query size as well.

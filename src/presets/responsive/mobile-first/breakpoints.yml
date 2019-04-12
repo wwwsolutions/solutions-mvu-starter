@@ -1,0 +1,14 @@
+# breakpoints-mobile-first.yml
+# UTILIZED IN _variables.css
+
+# MOBILE FIRST APPROACH
+# atSmall: "(min-width: 569px)"
+# atMedium: "(min-width: 824px)"
+# atLarge: "(min-width: 1010px)"
+# atXLarge: "(min-width: 1400px)"
+
+# CONVERTED TO EMS
+atSmall: "(min-width: 35.563em)"
+atMedium: "(min-width: 51.500em)"
+atLarge: "(min-width: 63.125em)"
+atXLarge: "(min-width: 87.500em)"

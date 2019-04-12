@@ -545,10 +545,31 @@ export function applicationTreeView(dispatch, application) {
                 label({ attributes: { for: 'presets_responsive' } }, ['responsive']),
                 input({ id: 'presets_responsive', type: 'checkbox' }),
                 ol([
-                  li({ className: 'file' }, [
-                    a({ href: '#' }, ['breakpoints.yml']),
-                    span({ className: 'comment' }, ['// viewport breakpoints presets.'])
-                  ]),
+
+                  // DESKTOP-FIRST
+                  li([
+                    label({ attributes: { for: 'presets_desktop_first' } }, ['desktop-first']),
+                    input({ id: 'presets_desktop_first', type: 'checkbox' }),
+                    ol([
+                      li({ className: 'file' }, [
+                        a({ href: '#' }, ['breakpoints.yml']),
+                        span({ className: 'comment' }, ['// viewport breakpoints presets for desktop-first approach.'])
+                      ]),
+                    ])
+                  ]), // DESKTOP-FIRST
+
+                  // MOBILE-FIRST
+                  li([
+                    label({ attributes: { for: 'presets_mobile_first' } }, ['mobile-first']),
+                    input({ id: 'presets_mobile_first', type: 'checkbox' }),
+                    ol([
+                      li({ className: 'file' }, [
+                        a({ href: '#' }, ['breakpoints.yml']),
+                        span({ className: 'comment' }, ['// viewport breakpoints presets for mobile-first approach.'])
+                      ]),
+                    ])
+                  ]), // MOBILE-FIRST
+
                   li({ className: 'file' }, [
                     a({ href: '#' }, ['line-height.yml']),
                     span({ className: 'comment' }, ['// responsive line-height presets.'])

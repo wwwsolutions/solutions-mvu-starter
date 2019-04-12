@@ -7,7 +7,8 @@ module.exports = {
     'postcss-map': { // https://www.npmjs.com/package/postcss-map
       basePath: 'src/presets',
       maps: [
-        'responsive/breakpoints.yml',
+        'responsive/mobile-first/breakpoints.yml', // SET MOBILE FIRST BREAKPOINTS
+        // 'responsive/desktop-first/breakpoints.yml', // SET DESKTOP FIRST BREAKPOINTS
         'typography/ratio.yml',
         'typography/step.yml',
         'responsive/line-height.yml',

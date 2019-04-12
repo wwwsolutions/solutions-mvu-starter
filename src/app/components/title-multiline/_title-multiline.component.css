@@ -6,12 +6,12 @@
 
 /////////////////////////////////////////////////*/
 
-@component title-multiline {
+.title-multiline {
   box-sizing: border-box;
   @map font primary;
   font-weight: 100;
   text-align: left;
-  color: var(--color-light-gray);
+  color: $color-light-gray;
   text-transform: uppercase;
   font-size: 2em;
   @mixin atMedium {

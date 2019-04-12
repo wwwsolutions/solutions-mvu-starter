@@ -6,13 +6,13 @@
 
 /////////////////////////////////////////////////*/
 
-@component headline {
+.headline {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
 
   /* PSEUDO MODIFIERS */
-  @modifier underlined::after {
+  &--underlined::after {
     content: "";
     display: block;
     height: 0.075em;
@@ -22,42 +22,42 @@
     background-color: map(font, color, headline, color);
   }
 
-  @modifier underlined-color-gold::after {
-    background-color: var(--color-yellow);
+  &--underlined-color-gold::after {
+    background-color: $color-yellow;
   }
 
-  @modifier underlined-color-light::after {
-    background-color: var(--color-moon-gray);
+  &--underlined-color-light::after {
+    background-color: $color-moon-gray;
   }
 
-  @modifier prepend-hash::before {
+  &--prepend-hash::before {
     display: inline-block;
     width: 1.25em;
     content: "#";
   }
 
   /* PADDING MODIFIERS */
-  @modifier p-normal {
+  &--p-normal {
     padding: 0.5em;
   }
 
   /* MARGIN MODIFIERS */
-  @modifier mb-none {
+  &--mb-none {
     margin-bottom: 0;
   }
-  @modifier m-none {
+  &--m-none {
     margin: 0;
   }
-  @modifier b-none {
+  &--b-none {
     margin-bottom: 0;
   }
 
   /* TEXT ALIGN MODIFIERS */
-  @modifier text-align-center {
+  &--text-align-center {
     text-align: center;
   }
 
-  @modifier text-align-center-until-medium {
+  &--text-align-center-until-medium {
     text-align: center;
     @mixin atMedium{
       text-align: left;
@@ -65,20 +65,20 @@
   }
 
   /* COLOR MODIFIERS */
-  @modifier color-light {
-    color: var(--color-moon-gray)
+  &--color-light {
+    color: $color-moon-gray;
   }
 
   /* BACKGROUND MODIFIERS */
-  @modifier knockout-lighter {
-    color: var(--color-white);
-    background: rgba(0, 0, 0, 0.6);
+  &--knockout-lighter {
+    color: $color-near-white;
+    background: color($color-black a(60%));
     mix-blend-mode: multiply;
   }
 
-  @modifier knockout-dark {
-    color: var(--color-white);
-    background: rgba(0, 0, 0, 0.85);
+  &--knockout-dark {
+    color: $color-near-white;
+    background: color($color-black a(85%));
     mix-blend-mode: multiply;
   }
 }

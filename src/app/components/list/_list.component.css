@@ -6,20 +6,20 @@
 
 /////////////////////////////////////////////////*/
 
-@component list {
+.list {
   width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: color($color-black a(5%));
 
   @mixin atMedium {
     flex-direction: column;
   }
 
-  @descendent item {
+  &__item {
     display: flex;
     flex-flow : column nowrap;
     padding: 0 0.75em 1.5em;
@@ -30,12 +30,12 @@
     }
   }
 
-  @descendent item:not(:last-child) {
+  &__item:not(:last-child) {
     /* margin: 0 0 1em 0; */
   }
 
-  @descendent module {
-    color: var(--color-near-black);
+  &__module {
+    color: $color-near-black;
     width: auto;
     flex: 0 0 auto;
     font-weight: bold;
@@ -51,7 +51,7 @@
     }
   }
 
-  @descendent description {
+  &__description {
     display: block;
   }
 

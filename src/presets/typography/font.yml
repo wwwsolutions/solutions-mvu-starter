@@ -11,24 +11,24 @@ baseline:
 
 c:
   h:
-    color: "var(--color-green)"
+    color: "$color-green"
 
 # SET TEXT COLORS
 color:
   text:
-    color: "var(--color-near-black)"
+    color: "$color-near-black"
   subtext:
-    color: "var(--color-near-black)"
+    color: "$color-near-black"
   link:
-    color: "var(--color-near-black)"
+    color: "$color-near-black"
   headline:
-    color: "var(--color-black)"
+    color: "$color-black"
   subheadline:
-    color: "var(--color-near-black)"
+    color: "$color-near-black"
   quote:
-    color: "var(--color-near-black)"
+    color: "$color-near-black"
   list:
-    color: "var(--color-near-black)"
+    color: "$color-near-black"
 
 # SET FONTS
 primary:

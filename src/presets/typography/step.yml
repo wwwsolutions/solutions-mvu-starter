@@ -1,26 +1,26 @@
 5:
-  font-size: "var(--stepUp5)"
+  font-size: "$stepUp5"
 
 4:
-  font-size: "var(--stepUp4)"
+  font-size: "$stepUp4"
 
 3:
-  font-size: "var(--stepUp3)"
+  font-size: "$stepUp3"
 
 2:
-  font-size: "var(--stepUp2)"
+  font-size: "$stepUp2"
 
 1:
-  font-size: "var(--stepUp1)"
+  font-size: "$stepUp1"
 
 0:
-  font-size: "var(--baseline)"
+  font-size: "$baseline"
 
 -1:
-  font-size: "var(--stepDown1)"
+  font-size: "$stepDown1"
 
 -2:
-  font-size: "var(--stepDown2)"
+  font-size: "$stepDown2"
 
 -3:
-  font-size: "var(--stepDown3)"
+  font-size: "$stepDown3"

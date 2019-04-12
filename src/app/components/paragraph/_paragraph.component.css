@@ -6,20 +6,20 @@
 
 /////////////////////////////////////////////////*/
 
-@component paragraph {
+.paragraph {
   box-sizing: border-box;
 
   /* COLOR MODIFIERS */
-  @modifier color-gold {
-    color: var(--color-yellow);
+  &--color-gold {
+    color: $color-yellow;
   }
-  @modifier color-light {
-    color: var(--color-moon-gray)
+  &--color-light {
+    color: $color-moon-gray;
   }
 
   /* FONT SIZE MODIFIERS */
   &--fs-larger {
-    font-size: calc(var(--baseline) * 1.075);
+    font-size: calc($baseline * 1.075);
     @mixin atSmall {
       font-size: calc(1.2705 * 1.025)em;
     }

@@ -6,7 +6,7 @@
 
 /////////////////////////////////////////////////*/
 
-@component logo {
+.logo {
     display: block;
     text-decoration: none;
     position: absolute;
@@ -22,7 +22,7 @@
     opacity: 1;
   }
 
-  @modifier small {
+  &--small {
 
     /* @mixin atMedium { */
       background: url(/assets/images/solutions-logo-box-gold-small.png) no-repeat top left;

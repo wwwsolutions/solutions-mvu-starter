@@ -9,12 +9,12 @@
 
 @lost flexbox flex;
 
-@component grid {
+.grid {
 
   /* CONTAINER
     > COMMON/GLOBAL/SHARED
    ----------------------------- */
-  @descendent container {
+  &__container {
     lost-center: 95%;
 
     @mixin atSmall {
@@ -37,7 +37,7 @@
   /* HERO
     > SPECIFIC SECTION
    ----------------------------- */
-  @descendent hero {
+  &__hero {
     lost-align: left;
     /* margin-top: 60px; */
     /* height: calc(100vh - (60px * 2)); */
@@ -49,14 +49,14 @@
     }
   }
 
-  @descendent hero-item {
+  &__hero-item {
     width: 100%;
     @mixin atLarge {
       width: 80%;
     }
   }
 
-  @descendent hero-buttons {
+  &__hero-buttons {
     display: flex;
     flex-direction: column;
     @mixin atSmall {
@@ -67,15 +67,15 @@
   /* ECOSYSTEM
     > SPECIFIC SECTION
    ----------------------------- */
-  @descendent ecosystem  {
+  &__ecosystem  {
     /* PLACEHOLDER */
   }
 
-  @descendent ecosystem-deck  {
+  &__ecosystem-deck  {
     lost-center: 100%;
   }
 
-  @descendent ecosystem-card  {
+  &__ecosystem-card  {
     lost-column: 1/1;
 
     @mixin atSmall {
@@ -88,7 +88,7 @@
   }
 
   /* SELECT ALL CARDS BUT LAST */
-  @descendent ecosystem-card:not(:last-child) {
+  &__ecosystem-card:not(:last-child) {
     margin-bottom: 2em;
     @mixin atXLarge {
       margin-bottom: 0;
@@ -96,14 +96,14 @@
   }
 
   /* SELECT 3RD CARD  */
-  @descendent ecosystem-card:nth-child(3) {
+  &__ecosystem-card:nth-child(3) {
     @mixin atSmall {
       margin-bottom: 0;
     }
   }
 
   /* SELECT 4TH CARD  */
-  @descendent ecosystem-card:nth-child(4) {
+  &__ecosystem-card:nth-child(4) {
     @mixin atMedium {
       margin-bottom: 0;
     }

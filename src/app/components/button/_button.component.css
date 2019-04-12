@@ -6,7 +6,7 @@
 
 /////////////////////////////////////////////////*/
 
-@component button {
+.button {
   box-sizing: border-box;
   @map font secondary;
   text-transform: uppercase;
@@ -21,60 +21,60 @@
   padding: 0.3em 0.6em 0.3em 0.6em;
 
   /* STATE MODIFIERS */
-  @modifier state {
-    background: linear-gradient(180deg, rgba(253, 253, 253, 0.2) 8.9283%, rgba(0, 0, 0, 0.2) 86.88406%);
+  &--state {
+    background: linear-gradient(180deg, color($color-white a(20%)) 8.9283%, color($color-black a(20%)) 86.88406%);
   }
-  @modifier state:link {
-    color: var(--color-moon-gray);
+  &--state:link {
+    color: $color-moon-gray;
   }
-  @modifier state:visited {
-    color: var(--color-moon-gray);
+  &--state:visited {
+    color: $color-moon-gray;
   }
-  @modifier state:hover {
-    background: linear-gradient(180deg, rgba(225, 225, 225, 0.5) 8.9283%, rgba(0, 0, 0, 0.3) 86.88406%);
-    background-color: var(--color-black);
-    color: var(--color-silver);
+  &--state:hover {
+    background: linear-gradient(180deg, color($color-light-silver a(540%)) 8.9283%, color($color-black a(30%)) 86.88406%);
+    background-color: $color-black;
+    color: $color-silver;
   }
-  @modifier state:active {
-    background: linear-gradient(180deg, rgba(225, 225, 225, 0.5) 8.9283%, rgba(0, 0, 0, 0.3) 86.88406%);
-    background-color: var(--color-black);
-    color: var(--color-silver);
+  &--state:active {
+    background: linear-gradient(180deg, color($color-light-silver a(20%)) 8.9283%, color($color-black a(30%)) 86.88406%);
+    background-color: $color-black;
+    color: $color-silver;
   }
 
   /* FONT SIZE MODIFIERS */
-  @modifier fs-large {
+  &--fs-large {
     font-size: 1.3em;
     padding: 0.5em 1em 0.5em 1em;
   }
 
   /* BACKGROUND COLOR MODIFIERS */
-  @modifier bg-green {
-    background-color: var(--color-green);
+  &--bg-green {
+    background-color: $color-green;
   }
-  @modifier bg-transparent {
-    background-color: var(--color-transparent);
+  &--bg-transparent {
+    background-color: $color-transparent;
   }
 
   /* BORDER MODIFIERS */
-  @modifier b-dark {
-    border: 0.75px solid rgba(0, 0, 0, 0.4);
+  &--b-dark {
+    border: 0.75px solid color($color-black a(40%));
   }
 
   /* BORDER RADIUS MODIFIERS */
-  @modifier br-small {
+  &--br-small {
     border-radius: 7px;
   }
 
 
   /* MARGIN MODIFIERS */
-  @modifier mb-until-small {
+  &--mb-until-small {
     margin-bottom: 1em;
     @mixin atSmall {
       margin-bottom: 0;
     }
   }
 
-  @modifier mr-after-small {
+  &--mr-after-small {
     margin-right: 0;
     @mixin atSmall {
       margin-right: 1em;

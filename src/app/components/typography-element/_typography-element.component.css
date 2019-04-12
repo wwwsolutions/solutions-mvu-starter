@@ -6,16 +6,16 @@
 
 /////////////////////////////////////////////////*/
 
-@component typography-element {
+.typography-element {
   box-sizing: border-box;
   width: 100%;
-  color: var(--color-yellow);
+  color: $color-yellow;
 
-  @descendent tag {
+  &__tag {
     @map font tertiary;
     display: block;
     font-weight: 700;
-    color: var(--color-silver);
+    color: $color-silver;
     font-size: 18px;
     position: relative;
     left: 0px;

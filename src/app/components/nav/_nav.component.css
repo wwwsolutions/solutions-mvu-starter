@@ -1,31 +1,24 @@
 /* COMMON */
-@component nav {
+.nav {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0);
+  background-color: color($color-black a(0%));
   transition: background-color 1s ease-out;
 
   & .nav__link {
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-    /* background-color: tomato; */
   }
 
-  /* @modifier bg-dark {
-    background-color: var(--color-dark-purple);
-    @mixin atMedium {
-      background-color: rgba(0, 0, 0, 0.85);
-    }
-  } */
 }
 
 /* HORIZONTAL */
-@component nav.horizontal {
+.nav.horizontal {
   display: none;
   /* padding: 0 2em; */
   transition: transform 0.5s ease-out;
@@ -64,10 +57,10 @@
 
   @mixin atMedium {
     & .nav__link.nav--is-current-link {
-      color: var(--color-yellow);
+      color: $color-yellow;
     }
     & .nav__link.nav--is-current-link-inverted {
-      color: var(--color-light-silver);
+      color: $color-light-silver;
     }
   }
 
@@ -75,7 +68,7 @@
 
 
 /* VERTICAL */
-@component nav.vertical {
+.nav.vertical {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +101,7 @@
 
   /* @mixin atMedium { */
     & .nav__link.nav--is-current-link {
-      color: var(--color-light-aqua);
+      color: $color-light-aqua;
     }
   /* } */
 

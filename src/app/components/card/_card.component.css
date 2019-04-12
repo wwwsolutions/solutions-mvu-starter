@@ -23,34 +23,34 @@
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--color-near-white);
+  background-color: $color-near-white;
   background: linear-gradient(0deg, #eaeaea  0%, #fafafa 100%);
 
-  @descendent header {
+  &__header {
     display: flex;
     margin: 0;
     flex-direction: column;
     padding: 0 2em;
   }
 
-  @descendent header .icon {
+  &__header .icon {
     display: block;
     margin: auto;
     background-color: #fff;
     border: 1px solid #CCC;
   }
 
-  @descendent header .headline {
+  &__header .headline {
     text-align: center;
   }
 
-  @descendent body {
+  &__body {
     margin: 0;
     text-align: left;
     padding: 2em;
   }
 
-  @descendent footer {
+  &__footer {
     display: none;
   }
 }

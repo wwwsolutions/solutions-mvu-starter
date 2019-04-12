@@ -6,8 +6,8 @@
 
 /////////////////////////////////////////////////*/
 
-@component navbar-overlay {
-  background-color: var(--color-dark-purple);
+.navbar-overlay {
+  background-color: $color-dark-purple;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   transform: translateX(-100%);
 
   /* TRANSFORM MODIFIERS */
-  @modifier is-visible {
+  &--is-visible {
     transform: translateX(0%);
     @mixin atMedium {
       transform: translateX(-100%);

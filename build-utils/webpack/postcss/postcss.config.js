@@ -16,17 +16,17 @@ module.exports = {
       ],
     },
 
-    'postcss-bem-fix-fdruide': { // https://www.npmjs.com/package/postcss-bem-fix-fdruide
-      style: 'bem',                 // suit or bem, suit by default,
-      defaultNamespace: undefined,  // default namespace to use, none by default
-      separators: {
-          descendent: '__',
-          modifier: '--'        // overwrite any default separator for chosen style
-      },
-      shortcuts: {
-          utility: 'util' //override at-rule name
-      }
-    },
+    // 'postcss-bem-fix-fdruide': { // https://www.npmjs.com/package/postcss-bem-fix-fdruide
+    //   style: 'bem',                 // suit or bem, suit by default,
+    //   defaultNamespace: undefined,  // default namespace to use, none by default
+    //   separators: {
+    //       descendent: '__',
+    //       modifier: '--'        // overwrite any default separator for chosen style
+    //   },
+    //   shortcuts: {
+    //       utility: 'util' //override at-rule name
+    //   }
+    // },
 
     // 'postcss-custom-media': { // https://github.com/postcss/postcss-custom-media
     // },

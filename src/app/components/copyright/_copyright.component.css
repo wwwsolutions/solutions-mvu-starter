@@ -6,21 +6,21 @@
 
 /////////////////////////////////////////////////*/
 
-@component copyright {
+.copyright {
   text-align: center;
   padding-top: 0.75em;
   @util center-block;
 
-  @descendent text {
-    color: var(--color-light-silver);
+  &__text {
+    color: $color-light-silver;
   }
 
-  @descendent heart {
+  &__heart {
     display: inline-block;
     position: relative;
     top: 6px;
     font-size: 32px;
     padding: 0 6px 0 6px;
-    color: var(--color-dark-red);
+    color: $color-dark-red;
   }
 }

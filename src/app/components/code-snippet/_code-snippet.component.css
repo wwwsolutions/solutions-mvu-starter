@@ -6,21 +6,21 @@
 
 /////////////////////////////////////////////////*/
 
-@component code-snippet {
+.code-snippet {
   padding: 2em;
   width: 100%;
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-x: hidden;
   mix-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: var(--color-white);
+  background-color: color($color-black a(60%));
+  color: $color-near-white;
 
   &__code {
     display: block;
   }
 
-  @modifier prepend-dollar::before{
+  &--prepend-dollar::before{
     display: inline-block;
     width: 0.75em;
     content: "$";

@@ -152,4 +152,6 @@ npm run gulp:modernizr
 
 ## License
 
+---
+
 [MIT License](https://nicksp.mit-license.org/), 2019.
